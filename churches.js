@@ -27,17 +27,17 @@ const churches = [
     website: "https://equmeniakyrkanlinkoping.se/"
   },
   {
-    id: "pingst",
-    name: { sv: "Pingstkyrkan Linköping (Cupolen)", en: "Pingst (Pentecostal) Linköping (Cupolen)" },
-    address: "Majgatan 4, 582 46 Linköping",
-    lat: 58.40821,
-    lng: 15.58911,
+    id: "Korskyrkan",
+    name: { sv: "Korskyrkan Stockholm", en: "Kors Church Stockholm" },
+    address: "Birger Jarlsgatan 66, 114 29 Stockholm",
+    lat: 59.34260828679164,
+    lng: 18.064185592170887,
     coords_verified: true,
     description: {
-      sv: "Pingstkyrkan i Linköping — lovsång, undervisning och gemenskap.",
-      en: "Pentecostal Church in Linköping — worship, teaching, and community."
+      sv: "...",
+      en: "..."
     },
-    website: "https://pingstlinkoping.se/"
+    website: "https://korskyrkanstockholm.se/"
   },
   {
     id: "johannes",
