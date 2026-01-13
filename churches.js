@@ -15,16 +15,16 @@ const churches = [
 
   },
   {
-    id: "vois",
-    name: { sv: "VOIS Church Linköping", en: "VOIS Church Linköping" },
-    address: "Ågatan 23, 582 22 Linköping",
-    lat: 58.41048,
-    lng: 15.62144,
+    id: "Korskyrkan",
+    name: { sv: "Korskyrkan Stockholm", en: "Kors Chruch Stockholm" },
+    address: "Birger Jarlsgatan 66, 114 29 Stockholm",
+    lat: 59.34260828679164,
+    lng: 18.064185592170887,
     coords_verified: true,
     description: {
-      sv: "VOIS Church Linköping — en modern, evangelikal kyrka med fokus på Jesus, gemenskap och mission.",
-      en: "VOIS Church Linköping — a modern evangelical church focused on Jesus, community, and mission."
+      sv: "...",
+      en: "..."
     },
-    website: "https://voischurch.se/linkoping"
+    website: "https://korskyrkanstockholm.se/"
   }
 ];
