@@ -53,13 +53,7 @@
       const icon = L.circleMarker([ch.lat, ch.lng], { radius:8, fillOpacity:0.9 });
       const marker = L.marker([ch.lat, ch.lng]).addTo(map);
       const popupHtml = `
-        <div class="card">
-          <strong>${'${' + 'ch.name' + '}' }[lang]</strong><br>
-          <small>${'${' + 'ch.address' + '}'}</small><br>
-          <p style="margin:6px 0;">${'${' + 'ch.description' + '}' }[lang]</p>
-          <a class="small" href="${'${' + 'ch.website' + '}' }" target="_blank" rel="noopener">Webbplats / Website</a>
-          ${'${' + '!ch.coords_verified' + '}' ? '<div style="color:#b00; margin-top:6px;"><small>Coords ≈ (verify)</small></div>' : ''}
-        </div>
+
       `;
       // Use a function to generate popup content because of template quirks
       marker.bindPopup(() => {
