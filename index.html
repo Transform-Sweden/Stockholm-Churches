@@ -13,6 +13,7 @@
       margin: 0;
     }
 
+    /* Top-left info bar */
     .topbar {
       position: absolute;
       left: 12px;
@@ -24,6 +25,36 @@
       box-shadow: 0 1px 6px rgba(0,0,0,0.2);
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
       min-width: 220px;
+    }
+
+    /* Right-side map controls */
+    .map-controls {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: white;
+      padding: 6px;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .btn {
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      background: #f8f8f8;
+      cursor: pointer;
+      font-size: 14px;
+      min-width: 40px;
+    }
+
+    .btn:hover {
+      background: #eee;
     }
 
     .langbtn {
@@ -53,12 +84,19 @@
       color: #0077cc;
       text-decoration: none;
     }
+
+    @media (max-width: 600px) {
+      .map-controls {
+        right: 8px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div id="map"></div>
 
+  <!-- Top-left info -->
   <div class="topbar" role="region" aria-label="controls">
     <div>
       <strong id="title-sv">Kyrkor i Stockholm</strong>
@@ -73,18 +111,19 @@
       </a>
     </div>
 
-    <div style="margin-top:8px;">
-      <button class="langbtn" id="zoom-in">＋</button>
-      <button class="langbtn" id="zoom-out">－</button>
-      <button class="langbtn" id="reset-view">Reset</button>
-      <button class="langbtn" id="fit-view">Fit</button>
-    </div>
-
     <div style="margin-top:8px; font-size:13px;">
       <strong>Tips:</strong>
       Tryck på en pin för info. / Tap a pin for info.<br>
       <small>+ / − zoom · 0 reset</small>
     </div>
+  </div>
+
+  <!-- Right-side map controls -->
+  <div class="map-controls" aria-label="map controls">
+    <button class="btn" id="zoom-in">＋</button>
+    <button class="btn" id="zoom-out">－</button>
+    <button class="btn" id="reset-view">⟳</button>
+    <button class="btn" id="fit-view">▣</button>
   </div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -173,7 +212,7 @@
         .openOn(map);
     };
 
-    // Custom controls
+    // Right-side controls
     document.getElementById('zoom-in').onclick = () => map.zoomIn();
     document.getElementById('zoom-out').onclick = () => map.zoomOut();
 
