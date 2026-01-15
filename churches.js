@@ -1,7 +1,7 @@
 // churches.js - dataset for Linköping evangelical churches (bilingual)
 const churches = [
   {
-    id: "citykyrkan",
+    id: "Citykyrkan",
     name: { sv: "Citykyrkan i Stockholm", en: "Citykyrkan (City Church) Stockholm" },
     address: "Adolf Fredriks kyrkogata 10, 111 37 Stockholm",
     lat: 59.33741816439673,
