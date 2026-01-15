@@ -18,8 +18,8 @@ const churches = [
     id: "S:ta Clara kyrka",
     name: { sv: "S:ta Clara kyrka Stockholm", en: "St. Clara's Church Stockholm" },
     address: "Klara Östra kyrkogata 7-9, 111 52 Stockholm",
-    lat: 59.33133170455795,
-    lng: 18.061546855926448,
+    lat: 59.3311937569754,
+    lng: 18.06152944787179,
     coords_verified: true,
     description: {
       sv: "...",
