@@ -28,11 +28,13 @@
 
     .langbtn {
       margin-right: 6px;
-      padding: 6px 8px;
+      margin-top: 4px;
+      padding: 6px 10px;
       border-radius: 6px;
       border: 1px solid #ddd;
       background: #f8f8f8;
       cursor: pointer;
+      font-size: 14px;
     }
 
     .langbtn.active {
@@ -66,11 +68,22 @@
     <div style="margin-top:8px;">
       <button class="langbtn active" id="btn-sv">Svenska</button>
       <button class="langbtn" id="btn-en">English</button>
-      <a class="small" href="#" id="list-link" style="margin-left:8px">Lista / List</a>
+      <a class="small" href="#" id="list-link" style="margin-left:8px">
+        Lista / List
+      </a>
+    </div>
+
+    <div style="margin-top:8px;">
+      <button class="langbtn" id="zoom-in">＋</button>
+      <button class="langbtn" id="zoom-out">－</button>
+      <button class="langbtn" id="reset-view">Reset</button>
+      <button class="langbtn" id="fit-view">Fit</button>
     </div>
 
     <div style="margin-top:8px; font-size:13px;">
-      <strong>Tips:</strong> Tryck på en pin för info. / Tap a pin for info.
+      <strong>Tips:</strong>
+      Tryck på en pin för info. / Tap a pin for info.<br>
+      <small>+ / − zoom · 0 reset</small>
     </div>
   </div>
 
@@ -80,13 +93,19 @@
   <script>
     let lang = 'sv';
 
-    const map = L.map('map').setView([59.3293, 18.0686], 12);
+    const INITIAL_CENTER = [59.3293, 18.0686];
+    const INITIAL_ZOOM = 12;
+
+    const map = L.map('map', {
+      zoomControl: false
+    }).setView(INITIAL_CENTER, INITIAL_ZOOM);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     const markers = [];
+    const bounds = L.latLngBounds([]);
 
     function addMarker(ch) {
       const marker = L.marker([ch.lat, ch.lng]).addTo(map);
@@ -104,6 +123,7 @@
       `);
 
       markers.push(marker);
+      bounds.extend([ch.lat, ch.lng]);
     }
 
     churches.forEach(addMarker);
@@ -138,7 +158,7 @@
           <div style="padding:8px;border-bottom:1px solid #eee;">
             <strong>${ch.name[lang]}</strong><br>
             <small>${ch.address}</small><br>
-            <a href="#" onclick="map.setView([${ch.lat},${ch.lng}],16);return false;">
+            <a href="#" onclick="map.setView([${ch.lat},${ch.lng}],16,{animate:true});return false;">
               Visa på karta / Show on map
             </a>
           </div>
@@ -152,6 +172,25 @@
         .setContent(html)
         .openOn(map);
     };
+
+    // Custom controls
+    document.getElementById('zoom-in').onclick = () => map.zoomIn();
+    document.getElementById('zoom-out').onclick = () => map.zoomOut();
+
+    document.getElementById('reset-view').onclick = () => {
+      map.setView(INITIAL_CENTER, INITIAL_ZOOM, { animate: true });
+    };
+
+    document.getElementById('fit-view').onclick = () => {
+      map.fitBounds(bounds, { padding: [40, 40], animate: true });
+    };
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '+' || e.key === '=') map.zoomIn();
+      if (e.key === '-') map.zoomOut();
+      if (e.key === '0') map.setView(INITIAL_CENTER, INITIAL_ZOOM, { animate: true });
+    });
 
     window.map = map;
   </script>
