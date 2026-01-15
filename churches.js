@@ -8,8 +8,8 @@ const churches = [
     lng: 18.059126248899677,
     coords_verified: true,
     description: {
-      sv: "En öppen, Jesus-centrerad församling mitt i stan (EFK). Varm gemenskap och evangeliskt fokus.",
-      en: "A warm, Jesus-centered downtown church (EFK) with a strong evangelistic focus."
+      sv: "...",
+      en: "..."
     },
     website: "https://cks.se/"
 
