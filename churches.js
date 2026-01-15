@@ -4,8 +4,8 @@ const churches = [
     id: "Citykyrkan",
     name: { sv: "Citykyrkan i Stockholm", en: "Citykyrkan (City Church) Stockholm" },
     address: "Adolf Fredriks kyrkogata 10, 111 37 Stockholm",
-    lat: 59.33741816439673,
-    lng: 18.0593015,
+    lat: 59.33707228120172,
+    lng: 18.059126248899677,
     coords_verified: true,
     description: {
       sv: "En öppen, Jesus-centrerad församling mitt i stan (EFK). Varm gemenskap och evangeliskt fokus.",
