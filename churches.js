@@ -32,8 +32,8 @@ const churches = [
     id: "Korskyrkan",
     name: { sv: "Korskyrkan Stockholm", en: "Kors Chruch Stockholm" },
     address: "Birger Jarlsgatan 66, 114 29 Stockholm",
-    lat: 59.34260828679164,
-    lng: 18.064185592170887,
+    lat: 59.342516217648715,
+    lng: 18.06410409744363,
     coords_verified: true,
     description: {
       sv: "...",
