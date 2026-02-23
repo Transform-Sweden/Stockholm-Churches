@@ -103,9 +103,9 @@ const churches = [
     id: "Folkungakyrkan",
     name: { sv: "Folkungakyrkan Stockholm", en: "Folkungakyrkan Stockholm" },
     address: "Folkungagatan 90, 116 30 Stockholm",
-    lat: 59.31436,
-    lng: 18.07125,
-    coords_verified: false,
+    lat: 59.315030128863626,
+    lng: 18.08051357301354,
+    coords_verified: true,
     description: {
       sv: "Folkungakyrkan är en evangelisk församling på Södermalm. Söndagsgudstjänst kl. 11:00.",
       en: "Folkungakyrkan is an evangelical church on Södermalm with a Sunday service at 11:00."
