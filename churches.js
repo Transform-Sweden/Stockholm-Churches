@@ -75,8 +75,8 @@ const churches = [
     id: "WAOChurch",
     name: { sv: "We Are One Church (WAO)", en: "We Are One Church (WAO)" },
     address: "Götgatan 87, 116 21 Stockholm",
-    lat: 59.31329,
-    lng: 18.06650,
+    lat: 59.309430473852636,
+    lng: 18.076052104443118,
     coords_verified: false,
     description: {
       sv: "We Are One Church är en församling i G12-rörelsen. Gudstjänster: fredag kl. 19:00 samt söndag kl. 11:00 och 14:00 med översättning.",
