@@ -119,7 +119,7 @@ const churches = [
     address: "Blecktornsgränd 13, 116 62 Stockholm",
     lat: 59.319464393572666,
     lng: 18.063015309274057,
-    coords_verified: false,
+    coords_verified: true,
     description: {
       sv: "Söderhöjdskyrkan är en kristen församling på Södermalm. Gudstjänst kl. 11:00.",
       en: "Söderhöjdskyrkan is a Christian congregation on Södermalm with a Sunday service at 11:00."
