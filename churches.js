@@ -61,9 +61,9 @@ const churches = [
     id: "Hillsong",
     name: { sv: "Hillsong Stockholm", en: "Hillsong Stockholm" },
     address: "Segelbåtsvägen 15, 112 64 Stockholm",
-    lat: 59.32847,
-    lng: 18.04769,
-    coords_verified: false,
+    lat: 59.32531989354176,
+    lng: 17.99268973727363,
+    coords_verified: true,
     description: {
       sv: "Hillsong Stockholm är en del av den internationella Hillsong-rörelsen med mångspråkiga gudstjänster. Söndagsgudstjänst kl. 10:30 och fler tider möjliga.",
       en: "Hillsong Stockholm is part of the international Hillsong movement with multi-service Sundays, including a 10:30 service.:contentReference[oaicite:1]{index=1}"
