@@ -110,7 +110,7 @@ const churches = [
       sv: "Folkungakyrkan är en evangelisk församling på Södermalm. Söndagsgudstjänst kl. 11:00.",
       en: "Folkungakyrkan is an evangelical church on Södermalm with a Sunday service at 11:00."
     },
-    website: ""
+    website: "https://folkungakyrkan.org/"
   },
 
   {
@@ -124,6 +124,6 @@ const churches = [
       sv: "Söderhöjdskyrkan är en kristen församling på Södermalm. Gudstjänst kl. 11:00.",
       en: "Söderhöjdskyrkan is a Christian congregation on Södermalm with a Sunday service at 11:00."
     },
-    website: ""
+    website: "https://www.soderhojdskyrkan.se/"
   }
 ];
