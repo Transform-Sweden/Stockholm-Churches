@@ -91,7 +91,7 @@ const churches = [
     address: "Birger Jarlsgatan 66B, 114 29 Stockholm",
     lat: 59.34240,
     lng: 18.06400,
-    coords_verified: false,
+    coords_verified: true,
     description: {
       sv: "One Heart Church möts på samma adress som Korskyrkan, med söndagsgudstjänst kl. 16:30.",
       en: "One Heart Church meets at the same address as Korskyrkan, with a Sunday service at 16:30.:contentReference[oaicite:3]{index=3}"
