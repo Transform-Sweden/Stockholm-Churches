@@ -66,7 +66,7 @@ const churches = [
     coords_verified: true,
     description: {
       sv: "Hillsong Stockholm är en del av den internationella Hillsong-rörelsen med mångspråkiga gudstjänster. Söndagsgudstjänst kl. 10:30 och fler tider möjliga.",
-      en: "Hillsong Stockholm is part of the international Hillsong movement with multi-service Sundays, including a 10:30 service.:contentReference[oaicite:1]{index=1}"
+      en: "Hillsong Stockholm is part of the international Hillsong movement with multi-service Sundays, including a 10:30 service."
     },
     website: "https://hillsong.se/"
   },
@@ -80,7 +80,7 @@ const churches = [
     coords_verified: false,
     description: {
       sv: "We Are One Church är en församling i G12-rörelsen. Gudstjänster: fredag kl. 19:00 samt söndag kl. 11:00 och 14:00 med översättning.",
-      en: "We Are One Church is part of the G12 movement. Services include Friday at 19:00 and Sunday at 11:00 and 14:00 (with translation available).:contentReference[oaicite:2]{index=2}"
+      en: "We Are One Church is part of the G12 movement. Services include Friday at 19:00 and Sunday at 11:00 and 14:00 (with translation available)"
     },
     website: "https://www.waochurch.com/"
   },
@@ -94,7 +94,7 @@ const churches = [
     coords_verified: true,
     description: {
       sv: "One Heart Church möts på samma adress som Korskyrkan, med söndagsgudstjänst kl. 16:30.",
-      en: "One Heart Church meets at the same address as Korskyrkan, with a Sunday service at 16:30.:contentReference[oaicite:3]{index=3}"
+      en: "One Heart Church meets at the same address as Korskyrkan, with a Sunday service at 16:30."
     },
     website: "http://www.oneheartchurch.se"
   },
@@ -108,7 +108,7 @@ const churches = [
     coords_verified: false,
     description: {
       sv: "Folkungakyrkan är en evangelisk församling på Södermalm. Söndagsgudstjänst kl. 11:00.",
-      en: "Folkungakyrkan is an evangelical church on Södermalm with a Sunday service at 11:00.:contentReference[oaicite:4]{index=4}"
+      en: "Folkungakyrkan is an evangelical church on Södermalm with a Sunday service at 11:00."
     },
     website: ""
   },
@@ -122,7 +122,7 @@ const churches = [
     coords_verified: false,
     description: {
       sv: "Söderhöjdskyrkan är en kristen församling på Södermalm. Gudstjänst kl. 11:00.",
-      en: "Söderhöjdskyrkan is a Christian congregation on Södermalm with a Sunday service at 11:00.:contentReference[oaicite:5]{index=5}"
+      en: "Söderhöjdskyrkan is a Christian congregation on Södermalm with a Sunday service at 11:00."
     },
     website: ""
   }
